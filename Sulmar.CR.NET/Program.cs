@@ -1,5 +1,6 @@
 ﻿using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
+using Sulmar.CR.NET.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace Sulmar.CR.NET
     {
         static void Main(string[] args)
         {
+            CollectionTest();
+
             PrintTest();
 
             ExportOptionsTest();
@@ -29,7 +32,25 @@ namespace Sulmar.CR.NET
             LoadAndExportReportTest();
         }
 
-     
+        private static void CollectionTest()
+        {
+            var customers = new List<Customer>
+            {
+                new Customer { CustomerId = 1, Name = "Company 1", Salary = 100 },
+                new Customer { CustomerId = 2, Name = "Company 2", Salary = 100 },
+                new Customer { CustomerId = 3, Name = "Company 3", Salary = 100 },
+            };
+
+
+            var rpt = new Reports.CrystalReport1();
+
+            rpt.SetDataSource(customers);
+
+
+            rpt.ExportToDisk(ExportFormatType.PortableDocFormat, "customers.pdf");
+
+            System.Diagnostics.Process.Start("customers.pdf");
+        }
 
         private static void PrintTest()
         {
