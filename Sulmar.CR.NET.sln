@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sulmar.CR.NET", "Sulmar.CR.NET\Sulmar.CR.NET.csproj", "{29CDCD7A-84F7-4293-9C35-CFBAAF556D99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sulmar.CR.NET.Console", "Sulmar.CR.NET\Sulmar.CR.NET.Console.csproj", "{29CDCD7A-84F7-4293-9C35-CFBAAF556D99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sulmar.CR.NET.WPFClient", "Sulmar.CR.NET.WPFClient\Sulmar.CR.NET.WPFClient.csproj", "{746B55BA-6172-4DF4-8EE4-785B37D9D1F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{29CDCD7A-84F7-4293-9C35-CFBAAF556D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29CDCD7A-84F7-4293-9C35-CFBAAF556D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29CDCD7A-84F7-4293-9C35-CFBAAF556D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{746B55BA-6172-4DF4-8EE4-785B37D9D1F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{746B55BA-6172-4DF4-8EE4-785B37D9D1F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{746B55BA-6172-4DF4-8EE4-785B37D9D1F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{746B55BA-6172-4DF4-8EE4-785B37D9D1F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
