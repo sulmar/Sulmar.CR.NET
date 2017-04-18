@@ -12,10 +12,6 @@ using System.Web.Http;
 
 namespace Sulmar.CR.NET.Service
 {
-    //public static class ApiController
-    //{
-
-    //}
 
     public class AttachmentActionResult : IHttpActionResult
     {
